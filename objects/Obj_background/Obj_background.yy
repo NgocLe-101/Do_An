@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "Obj_background",
-  "spriteId": {
-    "name": "spr_Background",
-    "path": "sprites/spr_Background/spr_Background.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

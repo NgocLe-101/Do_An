@@ -12,7 +12,7 @@ if (leftKey) {
 	running = false;
 	hspd = -3;
 }
-if (keyboard_check_released(vk_right)||keyboard_check_released(vk_left))
+if (keyboard_check_released(vk_right)||keyboard_check_released(vk_left)||keyboard_check_released(vk_down))
 	{hspd = 0; walking = false; running = true}
 if (standKey) 
 {
