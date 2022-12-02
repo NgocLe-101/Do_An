@@ -5,12 +5,12 @@ rightKey = keyboard_check(vk_right);
 leftKey = keyboard_check(vk_left);
 
 if (rightKey) {
-	hspd = 5;
+	hspd = 6;
 }
 if (leftKey) {
 	walking = true;
 	running = false;
-	hspd = -1.5;
+	hspd = -3;
 }
 if (keyboard_check_released(vk_right)||keyboard_check_released(vk_left))
 	{hspd = 0; walking = false; running = true}
@@ -30,7 +30,7 @@ if (place_meeting(x,y+1,spr_floor))
 			standing = false;
 		} else 
 		{
-			hspd = -5;
+			hspd = -6;
 		}
 		
 		if ((jumpkey||jumpkeyAlt) && !standKey) {
