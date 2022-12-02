@@ -1,0 +1,10 @@
+grav = 1;
+jspd = 20;
+vspd = 0;
+hspd = 0;
+standing = false;
+running = true;
+walking = false;
+jumping = false;
+falling = false;
+termVelocity = 50;
