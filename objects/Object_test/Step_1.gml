@@ -1,5 +1,7 @@
-if(global.gameOver) exit;
-
+if (!global.gameOver)
+{
+global.seconds += 1/room_speed;
+time = global.seconds;
 jumpkey = keyboard_check_pressed(vk_space);
 jumpkeyAlt = keyboard_check_pressed(vk_up);
 standKey = keyboard_check(vk_down);
@@ -22,7 +24,7 @@ if (standKey)
 		jumping = false;
 		falling = true;
 }
-if (place_meeting(x,y+1,spr_floor))
+if (place_meeting(x,y+1,obj_floor))
 {
 		vspd = 0;
 		jumping = false;
@@ -65,9 +67,9 @@ if (jumping)
 		falling = true;
 	}
 }
-if (place_meeting(x,y+vspd, spr_floor))
+if (place_meeting(x,y+vspd, obj_floor))
 {
-	while (!place_meeting(x,y+sign(vspd),spr_floor))
+	while (!place_meeting(x,y+sign(vspd),obj_floor))
 	{
 		y+= sign(vspd);	
 	}
@@ -75,5 +77,45 @@ if (place_meeting(x,y+vspd, spr_floor))
 }
 y+=vspd;
 x+=hspd;
+if (jumping || falling) {
+	sprite_index = spr_jumping;
+} else if (standing)
+{
+	sprite_index = spr_standing;
+} else if (running) 
+{
+	sprite_index = spr_running;
+} else if (walking)
+{
+	sprite_index = spr_walking;
+}
+} else {
+	sprite_index = spr_standing;
+	if (place_meeting(x,y+1,obj_floor))
+{
+	sprite_index = spr_player_dead;
+	vspd = 0;
+	image_index = imgchange;
+	if ((global.seconds - time) == i*0.2)
+	{
+		if (image_index != image_number-1)
+			{
+				imgchange++;
+				i++;
+			}
+	}
+	global.seconds+=1/room_speed;
+	if ((global.seconds - time) == 1)
+	{
+		image_speed = 0;
+		if (!instance_exists(obj_replay))
+			instance_create_layer(room_width/2, room_height/2, "Instances", obj_replay);
+			exit;
+	}
+} else {
+	if (vspd < termVelocity)
+			y+=grav*4;
+}
+}
 
 
