@@ -1,7 +1,11 @@
+global.seconds = 0;
+imgchange = 0;
+i = 1;
 grav = 1;
 jspd = 20;
 vspd = 0;
 hspd = 0;
+time = 0;
 standing = false;
 running = true;
 walking = false;

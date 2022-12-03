@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "spr_floor",
+  "name": "obj_floor",
   "spriteId": {
     "name": "Floor",
     "path": "sprites/Floor/Floor.yy",
