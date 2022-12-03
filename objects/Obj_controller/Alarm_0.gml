@@ -3,7 +3,7 @@ randomize();
 var count = irandom_range(1, 2);
 
 var i = instance_create_layer(room_width + 100, room_height-45, "Instances", obj_obstacle)
-
+	
 if (irandom_range(1, 4)==2)
 {
 	var k = instance_create_layer(room_width + 100, room_height-45, "Instances", obj_big_orge)
@@ -27,7 +27,6 @@ switch(i.sprite_index)
 			j.sprite_index = choose(spr_big_demon,spr_chort, spr_big_orge);
 			j.image_speed = 1;
 			j.image_index = irandom_range(0, sprite_get_number(i.sprite_index)-1)
-
 		}
 	}
 	break;
@@ -36,6 +35,9 @@ switch(i.sprite_index)
 		i.y = choose(room_height -55, room_height - choose(50,100), room_height - 160)
 		break;
 }
+
+
+
 
 if(global.gameOver) exit;
 
