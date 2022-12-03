@@ -1,8 +1,5 @@
-if(global.gameOver)
-{
-	sprite_index = spr_dead;
-	exit;
-}
+if(global.gameOver) exit;
+
 jumpkey = keyboard_check_pressed(vk_space);
 jumpkeyAlt = keyboard_check_pressed(vk_up);
 standKey = keyboard_check(vk_down);

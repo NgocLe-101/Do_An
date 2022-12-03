@@ -1,4 +1,8 @@
-
+if(global.gameOver)
+{
+	sprite_index = spr_dead;
+	exit;
+}
 
 if (jumping || falling) {
 	sprite_index = spr_jumping;
