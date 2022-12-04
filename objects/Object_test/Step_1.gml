@@ -39,6 +39,7 @@ if (place_meeting(x,y+1,obj_floor))
 		
 		if ((jumpkey||jumpkeyAlt) && !standKey) {
 			jumping = true;
+			audio_play_sound(jump, 100, false);
 			vspd = -jspd;
 		} 
 	
@@ -91,6 +92,13 @@ if (jumping || falling) {
 }
 } else {
 	sprite_index = spr_standing;
+	audio_pause_sound(background_song);
+	if (fixLoop)
+	{
+		audio_play_sound(endgame, 100, false);
+		fixLoop = false;
+	}
+	
 	if (place_meeting(x,y+1,obj_floor))
 {
 	sprite_index = spr_player_dead;
@@ -114,8 +122,6 @@ if (jumping || falling) {
 	}
 } else {
 	if (vspd < termVelocity)
-			y+=grav*4;
+			y+=grav*5;
 }
 }
-
-

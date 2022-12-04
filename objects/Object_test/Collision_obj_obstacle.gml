@@ -1,7 +1,6 @@
 global.gameOver = true;
 global.speedModifier = 0;
 scr_pause_background();
-
 	
 with (obj_obstacle)
 	image_speed = 0;

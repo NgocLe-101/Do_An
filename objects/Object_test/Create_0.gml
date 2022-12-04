@@ -6,6 +6,7 @@ jspd = 20;
 vspd = 0;
 hspd = 0;
 time = 0;
+fixLoop = true;
 standing = false;
 running = true;
 walking = false;

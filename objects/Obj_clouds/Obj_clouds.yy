@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Obj_clouds",
+  "name": "obj_clouds",
   "spriteId": {
     "name": "spr_clouds",
     "path": "sprites/spr_clouds/spr_clouds.yy",
