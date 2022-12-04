@@ -24,3 +24,4 @@ function scr_pause_background(){
 	layer_hspeed(lay_10, 0);
 	layer_hspeed(lay_11, 0);
 }
+
