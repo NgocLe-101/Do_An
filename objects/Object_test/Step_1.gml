@@ -39,6 +39,7 @@ if (place_meeting(x,y+1,obj_floor))
 		
 		if ((jumpkey||jumpkeyAlt) && !standKey) {
 			jumping = true;
+			audio_play_sound(jump, 100, false);
 			vspd = -jspd;
 		} 
 	
@@ -118,4 +119,7 @@ if (jumping || falling) {
 }
 }
 
-
+if (global.gameOver) {
+	audio_pause_sound(background_song);
+	audio_play_sound(endgame, 100, false);
+}

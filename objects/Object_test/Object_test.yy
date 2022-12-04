@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "Object_test",
+  "name": "object_test",
   "spriteId": {
     "name": "spr_standing",
     "path": "sprites/spr_standing/spr_standing.yy",
