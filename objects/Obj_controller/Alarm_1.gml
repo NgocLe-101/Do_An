@@ -1,5 +1,5 @@
 randomize();
-instance_create_layer(room_width + 100, room_height/2+irandom_range(-room_height/2,-250), "Instances", Obj_clouds);
+instance_create_layer(room_width + 100, room_height/2+irandom_range(-room_height/2,-250), "Instances", obj_clouds);
 
 if(global.gameOver) exit;
 

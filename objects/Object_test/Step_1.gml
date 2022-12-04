@@ -92,6 +92,13 @@ if (jumping || falling) {
 }
 } else {
 	sprite_index = spr_standing;
+	audio_pause_sound(background_song);
+	if (count == 0)
+	{
+		audio_play_sound(endgame, 100, false);
+		count++;
+	}
+	
 	if (place_meeting(x,y+1,obj_floor))
 {
 	sprite_index = spr_player_dead;
@@ -115,11 +122,6 @@ if (jumping || falling) {
 	}
 } else {
 	if (vspd < termVelocity)
-			y+=grav*4;
+			y+=grav*5;
 }
-}
-
-if (global.gameOver) {
-	audio_pause_sound(background_song);
-	audio_play_sound(endgame, 100, false);
 }
