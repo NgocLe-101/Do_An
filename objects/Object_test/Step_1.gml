@@ -93,10 +93,10 @@ if (jumping || falling) {
 } else {
 	sprite_index = spr_standing;
 	audio_pause_sound(background_song);
-	if (count == 0)
+	if (fixLoop)
 	{
 		audio_play_sound(endgame, 100, false);
-		count++;
+		fixLoop = false;
 	}
 	
 	if (place_meeting(x,y+1,obj_floor))
