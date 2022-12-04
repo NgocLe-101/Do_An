@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "endgame",
+  "name": "jump",
   "conversionMode": 0,
   "compression": 0,
   "volume": 1.0,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "endgame.mp3",
-  "duration": 0.522449,
+  "soundFile": "jump.mp3",
+  "duration": 0.444082,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
