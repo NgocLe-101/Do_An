@@ -13,6 +13,7 @@
     {"id":{"name":"spr_background_7","path":"sprites/spr_background_7/spr_background_7.yy",},"order":7,},
     {"id":{"name":"spr_background_9","path":"sprites/spr_background_9/spr_background_9.yy",},"order":9,},
     {"id":{"name":"obj_obstacle","path":"objects/obj_obstacle/obj_obstacle.yy",},"order":2,},
+    {"id":{"name":"font_main","path":"fonts/font_main/font_main.yy",},"order":0,},
     {"id":{"name":"scr_jump_check","path":"scripts/scr_jump_check/scr_jump_check.yy",},"order":2,},
     {"id":{"name":"object_test","path":"objects/object_test/object_test.yy",},"order":1,},
     {"id":{"name":"spr_bullet","path":"sprites/spr_bullet/spr_bullet.yy",},"order":0,},

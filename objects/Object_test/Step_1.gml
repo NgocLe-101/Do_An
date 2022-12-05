@@ -98,7 +98,6 @@ if (jumping || falling) {
 		audio_play_sound(endgame, 100, false);
 		fixLoop = false;
 	}
-	
 	if (place_meeting(x,y+1,obj_floor))
 {
 	sprite_index = spr_player_dead;
