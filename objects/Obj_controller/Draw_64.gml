@@ -4,5 +4,5 @@ draw_text(room_width-100, 20, string(score));
 
 
 
-if (global.gameOver)
-	draw_sprite(spr_game_over, 0, room_width/2, room_height/2);
+if (global.isPop)
+	draw_sprite(spr_game_over, 0, room_width/2, room_height/3);

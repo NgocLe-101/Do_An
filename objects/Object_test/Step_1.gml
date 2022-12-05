@@ -114,10 +114,14 @@ if (jumping || falling) {
 	global.seconds+=1/room_speed;
 	if ((global.seconds - time) == 1)
 	{
+		global.isPop = true;
 		image_speed = 0;
 		if (!instance_exists(obj_replay))
-			instance_create_layer(room_width/2, room_height/2, "Instances", obj_replay);
+		{
+			instance_create_layer(room_width/2, room_height/2+20, "Instances", obj_replay);
+			global.selectButtonLocation = 0;
 			exit;
+		}
 	}
 } else {
 	if (vspd < termVelocity)

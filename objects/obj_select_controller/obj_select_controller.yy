@@ -1,11 +1,8 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_replay",
-  "spriteId": {
-    "name": "spr_restart_textbox",
-    "path": "sprites/spr_restart_textbox/spr_restart_textbox.yy",
-  },
+  "name": "obj_select_controller",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
@@ -25,7 +22,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
