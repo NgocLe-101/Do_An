@@ -76,8 +76,12 @@ if (place_meeting(x,y+vspd, obj_floor))
 	}
 	vspd = 0;
 }
+
+if (x+hspd>0 && x+hspd<room_width) 
+{
+	x+=hspd;
+}
 y+=vspd;
-x+=hspd;
 if (jumping || falling) {
 	sprite_index = spr_jumping;
 } else if (standing)
