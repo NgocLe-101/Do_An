@@ -44,6 +44,7 @@
     {"id":{"name":"spr_background_8","path":"sprites/spr_background_8/spr_background_8.yy",},"order":8,},
     {"id":{"name":"background_song","path":"sounds/background_song/background_song.yy",},"order":0,},
     {"id":{"name":"spr_background_6","path":"sprites/spr_background_6/spr_background_6.yy",},"order":6,},
+    {"id":{"name":"spr_main_font","path":"sprites/spr_main_font/spr_main_font.yy",},"order":6,},
     {"id":{"name":"spr_background_1","path":"sprites/spr_background_1/spr_background_1.yy",},"order":1,},
     {"id":{"name":"jump","path":"sounds/jump/jump.yy",},"order":2,},
     {"id":{"name":"obj_title_menu","path":"objects/obj_title_menu/obj_title_menu.yy",},"order":2,},
