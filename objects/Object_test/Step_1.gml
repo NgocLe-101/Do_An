@@ -76,8 +76,12 @@ if (place_meeting(x,y+vspd, obj_floor))
 	}
 	vspd = 0;
 }
+
+if (x+hspd>0 && x+hspd<room_width) 
+{
+	x+=hspd;
+}
 y+=vspd;
-x+=hspd;
 if (jumping || falling) {
 	sprite_index = spr_jumping;
 } else if (standing)
@@ -98,7 +102,6 @@ if (jumping || falling) {
 		audio_play_sound(endgame, 100, false);
 		fixLoop = false;
 	}
-	
 	if (place_meeting(x,y+1,obj_floor))
 {
 	sprite_index = spr_player_dead;
@@ -115,10 +118,14 @@ if (jumping || falling) {
 	global.seconds+=1/room_speed;
 	if ((global.seconds - time) == 1)
 	{
+		global.isPop = true;
 		image_speed = 0;
 		if (!instance_exists(obj_replay))
-			instance_create_layer(room_width/2, room_height/2, "Instances", obj_replay);
+		{
+			instance_create_layer(room_width/2, room_height/2+20, "Instances", obj_replay);
+			global.selectButtonLocation = 0;
 			exit;
+		}
 	}
 } else {
 	if (vspd < termVelocity)
