@@ -23,10 +23,10 @@ switch(i.sprite_index)
 	if (global.speedModifier >1.5)
 	{
 		if (count == 2) {
-			var j = instance_create_layer(room_width + 100, room_height-50, "Instances", obj_obstacle)
-			j.sprite_index = choose(spr_big_demon,spr_chort);
+			var j = instance_create_layer(room_width + 100, room_height-50, "Instances", obj_zombie)
+			j.sprite_index = spr_zombie;
 			j.image_speed = 1;
-			j.image_index = irandom_range(0, sprite_get_number(i.sprite_index)-1)
+			j.image_index = 0;
 		}
 	}
 	break;
@@ -35,8 +35,6 @@ switch(i.sprite_index)
 		i.y = choose(room_height -55, room_height - choose(50,100), room_height - 160)
 		break;
 }
-
-
 
 
 if(global.gameOver) exit;

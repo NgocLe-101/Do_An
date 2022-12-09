@@ -5,3 +5,5 @@ with (obj_obstacle)
 	image_speed = 0;
 with (obj_big_orge)
 	image_speed = 0;
+with (obj_zombie)
+	image_speed = 0;
