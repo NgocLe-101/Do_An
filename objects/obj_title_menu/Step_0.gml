@@ -22,6 +22,8 @@ if accept_key {
 				case 0: room_goto(1); break;
 				// level
 				case 1: menu_level = 1; break;
+				// high score
+				case 3: break;
 				// quit game
 				case 4: game_end(); break;
 			}
@@ -47,10 +49,11 @@ if accept_key {
 		
 			}
 	}
-
+	
 	// if change menu level, then the pos return to 0 ( the first option of that menu level )
 	if _sml != menu_level {pos = 0};
 
 	// correct option length
 	op_length = array_length(option[menu_level]);
+	
 }
