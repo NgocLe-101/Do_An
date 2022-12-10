@@ -1,4 +1,5 @@
 global.speedModifier = 1;
+audio_play_sound(background_song, 100, true);
 game_score = 0;
 i=1;
 alarm[0] = room_speed * 3;
