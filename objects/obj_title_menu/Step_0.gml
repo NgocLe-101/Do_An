@@ -25,7 +25,9 @@ if accept_key {
 				// level
 				case 1: menu_level = 1; break;
 				// high score
-				case 2: break;
+				case 2: 
+					room_goto(room_scores);
+					break;
 				// quit game
 				case 3: game_end(); break;
 			}
