@@ -82,20 +82,21 @@ if (x+hspd>0 && x+hspd<room_width)
 	x+=hspd;
 }
 y+=vspd;
+// jumping = 0; running = 1; standing = 2; walking = 3; dead = 4;
 if (jumping || falling) {
-	sprite_index = spr_jumping;
+	get_image_index(global.isSelectedSkin,0)
 } else if (standing)
 {
-	sprite_index = spr_standing;
+	get_image_index(global.isSelectedSkin,2)
 } else if (running) 
 {
-	sprite_index = spr_running;
+	get_image_index(global.isSelectedSkin,1)
 } else if (walking)
 {
-	sprite_index = spr_walking;
+	get_image_index(global.isSelectedSkin,3)
 }
 } else {
-	sprite_index = spr_standing;
+	get_image_index(global.isSelectedSkin,2)
 	audio_pause_sound(background_song);
 	if (fixLoop)
 	{
@@ -104,7 +105,7 @@ if (jumping || falling) {
 	}
 	if (place_meeting(x,y+1,obj_floor))
 {
-	sprite_index = spr_player_dead;
+	get_image_index(global.isSelectedSkin,4)
 	vspd = 0;
 	image_index = imgchange;
 	if ((global.seconds - time) == i*0.2)

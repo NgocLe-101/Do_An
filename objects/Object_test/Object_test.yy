@@ -2,10 +2,7 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "object_test",
-  "spriteId": {
-    "name": "spr_standing",
-    "path": "sprites/spr_standing/spr_standing.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,

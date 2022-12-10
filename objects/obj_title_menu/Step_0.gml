@@ -19,7 +19,9 @@ if accept_key {
 		case 0:
 			switch(pos) {
 				// start game
-				case 0: room_goto(1); break;
+				case 0:
+					room_goto(Room_Skins);
+					break;
 				// level
 				case 1: menu_level = 1; break;
 				// high score
