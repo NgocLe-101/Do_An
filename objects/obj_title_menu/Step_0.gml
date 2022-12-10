@@ -25,9 +25,9 @@ if accept_key {
 				// level
 				case 1: menu_level = 1; break;
 				// high score
-				case 3: break;
+				case 2: break;
 				// quit game
-				case 4: game_end(); break;
+				case 3: game_end(); break;
 			}
 		// level
 		case 1:
