@@ -9,9 +9,8 @@ pos = 0;
 // pause menu
 option[0, 0] = "START";
 option[0, 1] = "LEVEL";
-option[0, 2] = "SKINS";
-option[0, 3] = "HIGHSCORE";
-option[0, 4] = "QUIT";
+option[0, 2] = "HIGHSCORE";
+option[0, 3] = "QUIT";
 
 // level menu
 option[1, 0] = "EASY";
