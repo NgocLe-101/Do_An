@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "group1",
-    "path": "folders/Rooms/group1.yy",
+    "name": "Room_Skin",
+    "path": "folders/Rooms/Room_Skin.yy",
   },
 }

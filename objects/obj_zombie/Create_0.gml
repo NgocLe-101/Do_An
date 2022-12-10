@@ -1,4 +1,4 @@
-hspd = -7 * global.speedModifier;
+hspd = -4 * global.speedModifier;
 grav=0.5;
 vspd = 0;
 jspd =10;

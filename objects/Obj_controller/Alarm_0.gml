@@ -20,7 +20,7 @@ switch(i.sprite_index)
 		i.image_speed = 1;
 		i.image_index = irandom_range(0, sprite_get_number(i.sprite_index)-1)
 		
-	if (global.speedModifier >1.5)
+	if (global.speedModifier >1.4)
 	{
 		if (count == 2) {
 			var j = instance_create_layer(room_width + 100, room_height-50, "Instances", obj_zombie)
