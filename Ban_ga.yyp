@@ -29,6 +29,7 @@
     {"id":{"name":"spr_select_button","path":"sprites/spr_select_button/spr_select_button.yy",},"order":0,},
     {"id":{"name":"spr_player_model2_dead","path":"sprites/spr_player_model2_dead/spr_player_model2_dead.yy",},"order":0,},
     {"id":{"name":"spr_title_background","path":"sprites/spr_title_background/spr_title_background.yy",},"order":4,},
+    {"id":{"name":"obj_posPlay_controller","path":"objects/obj_posPlay_controller/obj_posPlay_controller.yy",},"order":6,},
     {"id":{"name":"spr_exit","path":"sprites/spr_exit/spr_exit.yy",},"order":7,},
     {"id":{"name":"scr_collision_check","path":"scripts/scr_collision_check/scr_collision_check.yy",},"order":3,},
     {"id":{"name":"spr_background_4","path":"sprites/spr_background_4/spr_background_4.yy",},"order":4,},
