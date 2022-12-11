@@ -1,10 +1,10 @@
 {
   "resourceType": "GMSound",
   "resourceVersion": "1.0",
-  "name": "endgame",
+  "name": "oldman_dead_sound",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 1.0,
+  "volume": 0.5,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -14,8 +14,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "endgame.mp3",
-  "duration": 0.522449,
+  "soundFile": "oldman_dead_sound.mp3",
+  "duration": 0.783673,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

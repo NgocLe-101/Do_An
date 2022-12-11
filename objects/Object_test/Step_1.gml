@@ -102,7 +102,7 @@ if (jumping || falling) {
 	audio_pause_sound(background_song);
 	if (fixLoop)
 	{
-		audio_play_sound(endgame, 100, false);
+		audio_play_sound(scr_get_sound(global.isSelectedSkin), 100, false);
 		fixLoop = false;
 	}
 	if (place_meeting(x,y+1,obj_floor))

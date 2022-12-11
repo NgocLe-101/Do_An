@@ -6,6 +6,12 @@ accept_key = keyboard_check_pressed(vk_enter);
 // store number of options in current menu
 op_length = array_length(option[menu_level]);
 
+// play sound
+if (up_key||down_key)
+	audio_play_sound(select_sound,100,false);
+if (accept_key)
+	audio_play_sound(choose_sound,100,false);
+
 // move through menu
 pos += down_key - up_key;
 if pos >= op_length {pos = 0};

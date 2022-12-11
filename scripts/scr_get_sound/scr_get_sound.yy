@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_get_sprite",
+  "name": "scr_get_sound",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
