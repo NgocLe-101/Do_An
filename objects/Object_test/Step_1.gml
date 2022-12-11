@@ -1,5 +1,6 @@
 if (!global.gameOver)
 {
+scr_increase_background_speed();
 global.seconds += 1/room_speed;
 time = global.seconds;
 jumpkey = keyboard_check_pressed(vk_space);
@@ -9,12 +10,12 @@ rightKey = keyboard_check(vk_right);
 leftKey = keyboard_check(vk_left);
 
 if (rightKey) {
-	hspd = 6;
+	hspd = 6*global.speedModifier;
 }
 if (leftKey) {
 	walking = true;
 	running = false;
-	hspd = -3;
+	hspd = -3*global.speedModifier;
 }
 if (keyboard_check_released(vk_right)||keyboard_check_released(vk_left)||keyboard_check_released(vk_down))
 	{hspd = 0; walking = false; running = true}
@@ -34,7 +35,7 @@ if (place_meeting(x,y+1,obj_floor))
 			standing = false;
 		} else 
 		{
-			hspd = -6;
+			hspd = -6*global.speedModifier;
 		}
 		
 		if ((jumpkey||jumpkeyAlt) && !standKey) {
