@@ -3,7 +3,7 @@ width = 70;
 height = 100;
 
 op_border = 70;
-op_space = 50;
+op_space = 60;
 
 pos = 0;
 

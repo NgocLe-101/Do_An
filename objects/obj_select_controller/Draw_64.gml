@@ -1,11 +1,15 @@
 if (global.selectButtonLocation == 0)
 {
 	if (keyboard_check_pressed(vk_down)||keyboard_check_pressed(vk_up))
+	{	audio_play_sound(select_sound,100,false);
 			global.selectButtonLocation =1;
+	}
 } else if (global.selectButtonLocation == 1)
 {
 	if (keyboard_check_pressed(vk_down)||keyboard_check_pressed(vk_up))
+	{	audio_play_sound(select_sound,100,false);
 			global.selectButtonLocation =0;	
+	}
 }
 
 if (global.selectButtonLocation == 0)
