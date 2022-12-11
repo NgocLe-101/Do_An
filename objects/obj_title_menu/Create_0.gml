@@ -1,3 +1,5 @@
+global.gameLevel = 1;
+
 width = 70;
 height = 100;
 

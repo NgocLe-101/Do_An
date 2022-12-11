@@ -4,7 +4,7 @@ var count = irandom_range(1, 2);
 
 var i = instance_create_layer(room_width + 100, room_height-45, "Instances", obj_obstacle)
 	
-if (irandom_range(1, 5)==2)
+if ((irandom_range(1, 5)==2)&&(global.gameLevel!=0))
 {
 	var k = instance_create_layer(room_width + 100, room_height-45, "Instances", obj_big_orge)
 	k.sprite_index = spr_big_orge;
@@ -20,7 +20,7 @@ switch(i.sprite_index)
 		i.image_speed = 1;
 		i.image_index = irandom_range(0, sprite_get_number(i.sprite_index)-1)
 		
-	if (global.speedModifier >1.4)
+	if (((global.speedModifier >1.2)&&(global.gameLevel=2))||(global.speedModifier >1.4)&&(global.gameLevel=1))
 	{
 		if (count == 2) {
 			var j = instance_create_layer(room_width + 100, room_height-50, "Instances", obj_zombie)

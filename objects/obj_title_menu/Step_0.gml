@@ -36,15 +36,15 @@ if accept_key {
 			switch(pos) {
 				// EASY
 				case 0:
-			
+				global.gameLevel = 0;
 					break;
 				// MEDIUM
 				case 1:
-			
+				global.gameLevel = 1;
 					break;
 				// HARD
 				case 2:
-			
+				global.gameLevel = 2;
 					break;
 				// back
 				case 3:
