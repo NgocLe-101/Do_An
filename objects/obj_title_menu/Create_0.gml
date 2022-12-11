@@ -1,3 +1,5 @@
+global.gameLevel = 1;
+
 width = 70;
 height = 100;
 
@@ -17,6 +19,7 @@ option[1, 0] = "EASY";
 option[1, 1] = "MEDIUM";
 option[1, 2] = "HARD";
 option[1, 3] = "BACK";
+option[2, 0] = "BACK";
 
 op_length = 0;
 

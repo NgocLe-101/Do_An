@@ -6,6 +6,12 @@ accept_key = keyboard_check_pressed(vk_enter);
 // store number of options in current menu
 op_length = array_length(option[menu_level]);
 
+// play sound
+if (up_key||down_key)
+	audio_play_sound(select_sound,100,false);
+if (accept_key)
+	audio_play_sound(choose_sound,100,false);
+
 // move through menu
 pos += down_key - up_key;
 if pos >= op_length {pos = 0};
@@ -25,7 +31,9 @@ if accept_key {
 				// level
 				case 1: menu_level = 1; break;
 				// high score
-				case 2: break;
+				case 2: 
+					room_goto(room_scores);
+					break;
 				// quit game
 				case 3: game_end(); break;
 			}
@@ -34,15 +42,15 @@ if accept_key {
 			switch(pos) {
 				// EASY
 				case 0:
-			
+				global.gameLevel = 0;
 					break;
 				// MEDIUM
 				case 1:
-			
+				global.gameLevel = 1;
 					break;
 				// HARD
 				case 2:
-			
+				global.gameLevel = 2;
 					break;
 				// back
 				case 3:

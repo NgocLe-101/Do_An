@@ -1,5 +1,7 @@
 if (!global.gameOver)
 {
+audio_pause_sound(main_menu_sound);
+scr_increase_background_speed();
 global.seconds += 1/room_speed;
 time = global.seconds;
 jumpkey = keyboard_check_pressed(vk_space);
@@ -9,12 +11,12 @@ rightKey = keyboard_check(vk_right);
 leftKey = keyboard_check(vk_left);
 
 if (rightKey) {
-	hspd = 6;
+	hspd = 6*global.speedModifier;
 }
 if (leftKey) {
 	walking = true;
 	running = false;
-	hspd = -3;
+	hspd = -3*global.speedModifier;
 }
 if (keyboard_check_released(vk_right)||keyboard_check_released(vk_left)||keyboard_check_released(vk_down))
 	{hspd = 0; walking = false; running = true}
@@ -34,7 +36,7 @@ if (place_meeting(x,y+1,obj_floor))
 			standing = false;
 		} else 
 		{
-			hspd = -6;
+			hspd = -6*global.speedModifier;
 		}
 		
 		if ((jumpkey||jumpkeyAlt) && !standKey) {
@@ -100,7 +102,7 @@ if (jumping || falling) {
 	audio_pause_sound(background_song);
 	if (fixLoop)
 	{
-		audio_play_sound(endgame, 100, false);
+		audio_play_sound(scr_get_sound(global.isSelectedSkin), 100, false);
 		fixLoop = false;
 	}
 	if (place_meeting(x,y+1,obj_floor))

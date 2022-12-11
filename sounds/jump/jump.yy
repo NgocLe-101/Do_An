@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "jump.mp3",
-  "duration": 0.444082,
+  "duration": 0.365687,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
