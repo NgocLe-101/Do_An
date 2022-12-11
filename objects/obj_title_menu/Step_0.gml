@@ -20,7 +20,18 @@ if pos < 0 {pos = op_length-1};
 // using the options
 if accept_key {
 	var _sml = menu_level;
-	switch(menu_level) {
+	if (menu_level==0)
+	{
+		if (pos==0) room_goto(Room_Skins); //start game
+		else if (pos==1) menu_level = 1; //level
+		else if (pos==2) room_goto(room_scores); //high score
+		else if (pos==3) game_end(); //exit
+	} else if (menu_level==1)
+	{
+		if (pos!=3) global.gameLevel = pos;
+		else menu_level = 0;
+	}
+/*	switch(menu_level) {
 		// pause menu
 		case 0:
 			switch(pos) {
@@ -59,7 +70,7 @@ if accept_key {
 		
 			}
 	}
-	
+	*/
 	// if change menu level, then the pos return to 0 ( the first option of that menu level )
 	if _sml != menu_level {pos = 0};
 

@@ -1,8 +1,6 @@
-draw_set_font(global.font_menu);
-
 // draw menu background
 draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/sprite_height, 0, c_white, 1);
-
+draw_set_font(global.font_menu)
 // draw the options
 draw_set_valign(fa_top);
 draw_set_halign(fa_left);
