@@ -4,11 +4,13 @@ var count = irandom_range(1, 2);
 
 var i = instance_create_layer(room_width + 100, room_height-45, "Instances", obj_obstacle)
 	
-if ((irandom_range(1, 5)==2)&&(global.gameLevel!=0))
+if (irandom_range(1,5)==2)
 {
+	if (global.gameLevel!=0) {
 	var k = instance_create_layer(room_width + 100, room_height-45, "Instances", obj_big_orge)
 	k.sprite_index = spr_big_orge;
 	k.image_speed = 1;
+	}
 }
 
 
