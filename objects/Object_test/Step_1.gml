@@ -1,5 +1,6 @@
 if (!global.gameOver)
 {
+audio_pause_sound(main_menu_sound);
 scr_increase_background_speed();
 global.seconds += 1/room_speed;
 time = global.seconds;

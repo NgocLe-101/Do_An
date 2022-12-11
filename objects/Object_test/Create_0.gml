@@ -14,4 +14,4 @@ running = true;
 walking = false;
 jumping = false;
 falling = false;
-termVelocity = 12.5;
+termVelocity = 50;
