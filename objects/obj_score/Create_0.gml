@@ -8,10 +8,9 @@ spr_height = sprite_get_height(spr_score);
 stringheight = string_height(text);
 stringwidth = string_width(text);
 
-hs[1] = 0;
-hs[2] = 0;
-hs[3] = 0;
-hs[4] = 0;
-hs[5] = 0;
 
-high_score = score;
+
+
+
+
+
