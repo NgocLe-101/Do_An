@@ -50,6 +50,7 @@ else
 {
 	if (standing)
 	{
+		global.checkForIns = true;
 		vspd += grav*4;
 	} else {
 		if (vspd < termVelocity)

@@ -1,6 +1,7 @@
 global.seconds = 0;
 global.isPop = false;
 global.selectButtonLocation = 2;
+global.checkForIns = false;
 imgchange = 0;
 i = 1;
 grav = 1;

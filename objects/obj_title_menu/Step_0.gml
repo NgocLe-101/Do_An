@@ -25,11 +25,15 @@ if accept_key {
 		if (pos==0) room_goto(Room_Skins); //start game
 		else if (pos==1) menu_level = 1; //level
 		else if (pos==2) room_goto(room_scores); //high score
-		else if (pos==3) game_end(); //exit
+		else if (pos==3) menu_level = 2; //about
+		else if (pos==4) game_end();
 	} else if (menu_level==1)
 	{
 		if (pos!=3) global.gameLevel = pos;
 		else menu_level = 0;
+	} else if (menu_level==2)
+	{
+		if (pos==0) menu_level=0;	
 	}
 /*	switch(menu_level) {
 		// pause menu
